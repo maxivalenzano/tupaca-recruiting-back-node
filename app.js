@@ -30,12 +30,8 @@ if (!isProduction) {
   app.use(errorhandler());
 }
 
-if(isProduction){
-  mongoose.connect(process.env.MONGODB_URI);
-} else {
-  mongoose.connect('mongodb://localhost/conduit');
-  mongoose.set('debug', true);
-}
+mongoose.connect('mongodb+srv://tupaca:ljDgB3vMu9vid7I6@cluster0.mejqr.mongodb.net/recruiting?retryWrites=true&w=majority');
+mongoose.set('debug', true);
 
 require('./models/User');
 require('./models/Article');
