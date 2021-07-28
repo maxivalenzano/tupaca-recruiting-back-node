@@ -30,7 +30,7 @@ if (!isProduction) {
   app.use(errorhandler());
 }
 
-mongoose.connect('mongodb+srv://tupaca:ljDgB3vMu9vid7I6@cluster0.mejqr.mongodb.net/recruiting?retryWrites=true&w=majority');
+mongoose.connect('mongodb+srv://tupaca:4uoVLbBbNttPZ86O@cluster0.mejqr.mongodb.net/recruiting?retryWrites=true&w=majority');
 mongoose.set('debug', true);
 
 require('./models/User');
